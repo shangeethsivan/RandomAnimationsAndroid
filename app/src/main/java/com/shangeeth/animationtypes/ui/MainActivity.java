@@ -1,10 +1,11 @@
-package com.shangeeth.animationtypes;
+package com.shangeeth.animationtypes.ui;
 
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.shangeeth.animationtypes.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,13 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         FragmentManager lFragmentManager = getSupportFragmentManager();
 
         FragmentTransaction lFragmentTransaction = lFragmentManager.beginTransaction();
 
-        lFragmentTransaction.add(R.id.container_1,new DisplayFragment());
-        lFragmentTransaction.add(R.id.container_2,new ControllerFragment());
+        lFragmentTransaction.add(R.id.display_container,new DisplayFragment());
+        lFragmentTransaction.add(R.id.controller_container,new ControllerFragment());
 
         lFragmentTransaction.commit();
     }

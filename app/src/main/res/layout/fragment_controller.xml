@@ -1,14 +1,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.shangeeth.animationtypes.ControllerFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/click_me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click Me" />
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="2dp"
+        android:background="#e5e5e5"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:layout_height="match_parent"
+        />
 
 </FrameLayout>

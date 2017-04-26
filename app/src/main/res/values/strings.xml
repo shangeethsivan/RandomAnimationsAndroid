@@ -4,4 +4,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="animation_types">
+        <item>Slide and Fade out Animation</item>
+        <item>Clock wise and AntiClockwise Rotate Animation</item>
+        <item>Bounce Animation</item>
+        <item>Flip Animation</item>
+    </string-array>
 </resources>

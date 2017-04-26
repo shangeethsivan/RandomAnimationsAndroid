@@ -4,6 +4,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import com.shangeeth.animationtypes.R;
 
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager lFragmentManager = getSupportFragmentManager();
 
         FragmentTransaction lFragmentTransaction = lFragmentManager.beginTransaction();
+
+        findViewById(R.id.display_container).getContext();
 
         lFragmentTransaction.add(R.id.display_container,new DisplayFragment());
         lFragmentTransaction.add(R.id.controller_container,new ControllerFragment());

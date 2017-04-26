@@ -6,11 +6,10 @@
         android:id="@+id/grid_view"
         android:layout_width="match_parent"
         android:numColumns="2"
-        android:verticalSpacing="2dp"
-        android:background="#e5e5e5"
+        android:drawSelectorOnTop="true"
+        android:background="@android:color/transparent"
         android:gravity="center"
         android:stretchMode="columnWidth"
-        android:horizontalSpacing="2dp"
         android:layout_height="match_parent"
         />
 

@@ -20,9 +20,9 @@ import java.util.ArrayList;
 public class CustomGridAdapter extends BaseAdapter {
 
     Context mContext;
-    ArrayList<String> mAnimationTypes;
+    String[] mAnimationTypes;
 
-    public CustomGridAdapter(Context pContext, ArrayList<String> pAnimationTypes) {
+    public CustomGridAdapter(Context pContext, String[] pAnimationTypes) {
         this.mContext = pContext;
         this.mAnimationTypes = pAnimationTypes;
 
@@ -30,12 +30,12 @@ public class CustomGridAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return mAnimationTypes.size();
+        return mAnimationTypes.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return mAnimationTypes.get(position);
+        return mAnimationTypes[position];
     }
 
     @Override
@@ -53,7 +53,7 @@ public class CustomGridAdapter extends BaseAdapter {
         } else
             lView = convertView;
 
-        ((TextView) lView.findViewById(R.id.animation_type_tv)).setText(mAnimationTypes.get(position));
+        ((TextView) lView.findViewById(R.id.animation_type_tv)).setText(mAnimationTypes[position]);
 
         return lView;
     }
